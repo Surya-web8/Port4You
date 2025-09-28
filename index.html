@@ -1,0 +1,302 @@
+<!DOCTYPE TML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryanshu Ajeesh | Full Stack Developer Portfolio</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom scroll behavior for smooth navigation */
+        html {
+            scroll-behavior: smooth;
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Set dark background globally */
+        body {
+            background-color: #0d1117; /* Dark charcoal */
+            color: #c9d1d9; /* Light grey text */
+        }
+
+        /* Custom glow effect for hero section */
+        .hero-glow {
+            box-shadow: 0 0 80px -10px rgba(0, 255, 255, 0.1), 0 0 120px -20px rgba(147, 51, 234, 0.1);
+        }
+
+        /* Custom scrollbar styling (optional, but nice for dark themes) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #161b22;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #2a333d;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #444c56;
+        }
+
+    </style>
+    <!-- Tailwind Config for Inter font and custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#22c55e',
+                        'secondary-purple': '#a855f7',
+                        'bg-dark': '#0d1117',
+                        'card-dark': '#161b22',
+                        'text-light': '#c9d1d9',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="selection:bg-primary-blue selection:text-bg-dark">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-bg-dark/95 backdrop-blur-sm shadow-lg shadow-primary-blue/5">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold tracking-tight text-primary-blue hover:text-primary-blue/80 transition duration-300">
+                        S. Ajeesh
+                    </a>
+                </div>
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-text-light hover:bg-card-dark hover:text-primary-blue transition duration-300">About</a>
+                        <!-- Projects link removed -->
+                        <a href="#achievements" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-text-light hover:bg-card-dark hover:text-primary-blue transition duration-300">Achievements</a>
+                        <a href="#contact" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-text-light hover:bg-card-dark hover:text-primary-blue transition duration-300">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button (Hamburger) - Not functional, but styled -->
+                <div class="md:hidden">
+                    <button class="text-text-light hover:text-primary-blue focus:outline-none focus:ring-2 focus:ring-primary-blue p-2 rounded-md">
+                        <!-- Icon Placeholder (e.g., Lucide icon for menu) -->
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Hero Section -->
+        <section id="home" class="py-24 md:py-40 flex flex-col items-center text-center hero-glow rounded-xl my-8">
+            <p class="text-lg font-mono tracking-wider text-primary-blue mb-4">
+                👋 Hello, I'm
+            </p>
+            <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tighter mb-4 text-white">
+                Suryanshu Ajeesh
+            </h1>
+            <!-- UPDATED TAGLINE -->
+            <h2 class="text-2xl sm:text-4xl font-light text-secondary-purple mb-8">
+                Competitive Problem-Solver | Cloud Community Contributor
+            </h2>
+            <!-- UPDATED PARAGRAPH -->
+            <p class="max-w-3xl text-xl text-text-light/80 mb-10">
+                I excel at high-pressure problem-solving and strategic execution, skills honed through competitive **Esports** (Rocket League Runner-Up). I actively contribute to the **Cloud community**, focusing on the exchange of knowledge and ideas within the technology ecosystem. My approach combines competitive spirit, **rapid decision-making**, and continuous learning to tackle complex challenges.
+            </p>
+            <a href="#achievements" class="inline-block px-8 py-3 text-lg
+                font-semibold text-bg-dark bg-primary-blue rounded-full
+                shadow-lg shadow-primary-blue/30 hover:bg-primary-blue/90
+                transform hover:scale-105 transition duration-300 ease-in-out
+                focus:outline-none focus:ring-4 focus:ring-primary-blue/50">
+                View My Work & Achievements &darr;
+            </a>
+        </section>
+
+        <!-- Divider -->
+        <div class="w-full h-px bg-card-dark my-16"></div>
+
+        <!-- About Section (Core Expertise Only) -->
+        <section id="about" class="py-16 md:py-24">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">
+                About Me
+            </h2>
+
+            <!-- About Text Card -->
+            <div class="max-w-4xl mx-auto bg-card-dark p-8 rounded-xl shadow-2xl border border-secondary-purple/20 mb-12">
+                <!-- UPDATED ABOUT ME CONTENT -->
+                <p class="text-lg text-text-light leading-relaxed mb-4">
+                    My drive is fueled by a commitment to continuous improvement and high-stakes performance, skills refined as a top competitor in **Esports**. This experience translates directly into professional strengths: **rapid decision-making, effective teamwork**, and strategic thinking under pressure.
+                </p>
+                <p class="text-lg text-text-light leading-relaxed">
+                    I actively engage with the wider tech ecosystem, particularly within the **Cloud community** (e.g., Google Cloud Community Day), where I contribute to the exchange of knowledge and collaborative problem-solving. I am always seeking opportunities to apply my technical and competitive mindset to complex challenges.
+                </p>
+            </div>
+            
+            <!-- Removed: Skills Grid/Technical Stack -->
+
+        </section>
+        
+        <!-- Divider placed here to separate About text from Achievements -->
+        <div class="w-full h-px bg-card-dark my-16"></div>
+
+        <!-- Removed: Projects Section -->
+
+
+        <!-- Achievements and Certificates Section (UPDATED GRID to support 3 cards) -->
+        <section id="achievements" class="py-16 md:py-24">
+            <h2 class="text-4xl font-bold text-center mb-12 text-white">
+                Achievements & Certifications
+            </h2>
+
+            <!-- Updated Grid: 1 col on mobile, 2 cols on tablet/3 cols on desktop -->
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+
+                <!-- Achievement Card 1: Fiverr Freelancing (UPDATED DESCRIPTION) -->
+                <a href="https://www.fiverr.com/regularrecess?public_mode=true" target="_blank" class="block bg-card-dark p-6 rounded-xl shadow-2xl border border-secondary-purple/30 transition duration-500 hover:border-primary-blue/50 transform hover:scale-[1.02] hover:shadow-primary-blue/50">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="text-5xl">💻</span>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-secondary-purple">
+                                Freelance Service Provider
+                            </h3>
+                            <p class="text-sm text-text-light/70 font-mono">
+                                Fiverr Seller: regularrecess
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-text-light/80 mb-4">
+                        As 'Regular Recess,' I believe great design is centered on making solutions that work—both for the brand and for the audience. I approach digital presence with a fresh eye, combining clean visuals with passion to help brands present themselves effectively online.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-mono bg-secondary-purple/20 text-secondary-purple px-2 py-1 rounded">Freelancing</span>
+                        <span class="text-xs font-mono bg-secondary-purple/20 text-secondary-purple px-2 py-1 rounded">Creative Design</span>
+                        <span class="text-xs font-mono bg-secondary-purple/20 text-secondary-purple px-2 py-1 rounded">Branding Support</span>
+                    </div>
+                </a>
+
+                <!-- Achievement Card 2: Google Cloud Certificate (Now a clickable link) -->
+                <!-- NOTE: Replace the '#' in href with the link to your actual Google Cloud certificate if available -->
+                <a href="#cloud-certificate-link" target="_blank" class="block bg-card-dark p-6 rounded-xl shadow-2xl border border-primary-blue/30 transition duration-500 hover:border-secondary-purple/50 transform hover:scale-[1.02] hover:shadow-secondary-purple/50">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="text-5xl">☁️</span>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-secondary-purple">
+                                Participation Certificate
+                            </h3>
+                            <p class="text-sm text-text-light/70 font-mono">
+                                Google Cloud Community Day Kochi 2025
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-text-light/80 mb-4">
+                        Active participation and valuable contribution to the exchange of knowledge and ideas at this landmark event for the Kerala tech community.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-mono bg-secondary-purple/20 text-secondary-purple px-2 py-1 rounded">Cloud Technology</span>
+                        <span class="text-xs font-mono bg-secondary-purple/20 text-secondary-purple px-2 py-1 rounded">Networking</span>
+                        <span class="text-xs font-mono bg-secondary-purple/20 text-secondary-purple px-2 py-1 rounded">Kochi 2025</span>
+                    </div>
+                </a>
+
+                <!-- Achievement Card 3: Esport Rocket League (Now a clickable link) -->
+                <a href="https://www.gemsunitedindianschool-abudhabi.com/Why-UIS/Latest-Stories/GEMS-UIS-Shines-at-Tech-Day-Event" target="_blank" class="block bg-card-dark p-6 rounded-xl shadow-2xl border border-primary-blue/30 transition duration-500 hover:border-secondary-purple/50 transform hover:scale-[1.02] hover:shadow-primary-blue/50">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <span class="text-5xl">🥈</span>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-primary-blue">
+                                Esports Tournament Runner-Up
+                            </h3>
+                            <p class="text-sm text-text-light/70 font-mono">
+                                Rocket League Championship
+                            </p>
+                        </div>
+                    </div>
+                    <p class="text-text-light/80 mb-4">
+                        Achieved **Second Place** in the competitive Rocket League tournament. Successfully demonstrated **teamwork, rapid decision-making**, and competitive execution alongside teammates: **Johan Jose Tharakan and Mohammed Anas Qureshi.**
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs font-mono bg-primary-blue/20 text-primary-blue px-2 py-1 rounded">Competitive Gaming</span>
+                        <span class="text-xs font-mono bg-primary-blue/20 text-primary-blue px-2 py-1 rounded">Teamwork</span>
+                        <span class="text-xs font-mono bg-primary-blue/20 text-primary-blue px-2 py-1 rounded">Rocket League</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="w-full h-px bg-card-dark my-16"></div>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24">
+            <h2 class="text-4xl font-bold text-center mb-6 text-white">
+                Get In Touch
+            </h2>
+            <p class="text-center text-xl text-text-light/80 max-w-2xl mx-auto mb-12">
+                I am currently open to new full-time opportunities and freelance projects. Whether you have a question or just want to say hi, feel free to reach out!
+            </p>
+
+            <div class="max-w-xl mx-auto bg-card-dark p-8 rounded-xl shadow-2xl border border-primary-blue/20">
+
+                <div class="space-y-6 text-center">
+                    <p class="text-2xl font-semibold text-primary-blue">
+                        Contact Details
+                    </p>
+                    
+                    <!-- Email Address -->
+                    <div>
+                        <p class="text-lg text-text-light/80 font-mono mb-1">Email</p>
+                        <a href="mailto:suryanshuajeesh@gmail.com" class="text-2xl font-light text-text-light hover:text-secondary-purple transition duration-300 block">
+                            suryanshuajeesh@gmail.com
+                        </a>
+                    </div>
+                    
+                    <!-- Phone Number -->
+                    <div>
+                        <p class="text-lg text-text-light/80 font-mono mb-1">Phone</p>
+                        <a href="tel:8301090348" class="text-2xl font-light text-text-light hover:text-secondary-purple transition duration-300 block">
+                            +91 8301090348
+                        </a>
+                    </div>
+
+                    <div class="pt-4">
+                        <p class="text-lg text-text-light/80 mb-3">Or find me on social platforms:</p>
+                        <div class="flex justify-center space-x-6">
+                            
+                            <!-- NEW: Fiverr Icon (Briefcase SVG used for service provider) -->
+                            <a href="https://www.fiverr.com/regularrecess?public_mode=true" target="_blank" class="text-text-light hover:text-secondary-purple transition duration-300">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 5H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h18a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM3 7h18v2H3V7zm18 10H3v-2h18v2zM12 11a1 1 0 0 1 1 1v2a1 1 0 0 1-2 0v-2a1 1 0 0 1 1-1z"/></svg>
+                            </a>
+                            
+                            <!-- GitHub Icon Placeholder -->
+                            <a href="https://github.com/Surya-web8" target="_blank" class="text-text-light hover:text-secondary-purple transition duration-300">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.868 8.163 6.83 9.497.5.092.682-.217.682-.483 0-.237-.008-.867-.013-1.7-2.782.603-3.37-1.341-3.37-1.341-.454-1.15-.11-1.45-1.11-.84-1.12-.676-.088-.663.063-.65.9.063 1.373.918 1.373 1.48.077.584.974.832 1.373.748.063-.604.354-1.02.645-1.25-2.618-.28-5.37-1.3-5.37-5.83 0-1.29.462-2.35 1.222-3.17-.123-.28-.53-1.503.116-3.13 0 0 1.002-.32 3.284 1.205.955-.264 1.968-.396 2.982-.396s2.028.132 2.982.396c2.282-1.525 3.284-1.205 3.284-1.205.646 1.627.239 2.85.116 3.13.76.82 1.222 1.88 1.222 3.17 0 4.54-2.753 5.548-5.385 5.82-.41.353-.787.97-.787 1.957 0 1.41.0 2.548.0 2.887 0 .267.18.575.688.484C19.13 20.16 22 16.416 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
+                            </a>
+                            <!-- LinkedIn Icon Placeholder -->
+                            <a href="https://www.linkedin.com/in/suryanshu-ajeesh-70a578383" target="_blank" class="text-text-light hover:text-secondary-purple transition duration-300">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.528-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-card-dark mt-16 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-text-light/60 text-sm">
+            <p>&copy; 2025 Suryanshu Ajeesh. All rights reserved.</p>
+            <p class="mt-1">Built with ❤️ and Tailwind CSS.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
